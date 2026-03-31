@@ -1,0 +1,37 @@
+*{
+    color: white;
+    background-color: rgb(67, 66, 66);
+}
+
+.formulario {
+   text-align: center;
+    padding: 10px;
+    
+
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #0bbe50;
+}
+
+.button {
+    background-color: #28fc79;
+}
+.button:hover {
+    background-color: #0bbe50;
+}
+.salvar {
+    background-color: #28fc79;
+}
+.salvar:hover {
+    background-color: #0bbe50;
+}
+.adicionar {
+    background-color: #28fc79;
+}  
+.adicionar:hover {
+    background-color: #0bbe50;
+}

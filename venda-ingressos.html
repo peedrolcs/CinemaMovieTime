@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">MovieTime</a>
+        </div>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+ <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-filme.html" class="nav-link">Cadastro de Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-salas.html" class="nav-link">Cadastro das Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-sessoes.html" class="nav-link">Cadastro das Sessões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes-disponiveis.html" class="nav-link">Sessões Disponíveis</a>
+                    </li>
+                </ul>
+
+</div>
+
+    </nav>
+    
+
+    <div class="container mt-4">
+        <h2>Venda de Ingressos</h2>
+        <hr>
+
+        <div class="row justify-content-center">
+            <div class="col">
+                <select id="sessao" class="form-control mb-2">
+                    <option value="">Selecione a Sessão</option>
+                </select>
+
+                <input id="nome" class="form-control mb-2" placeholder="Nome">
+
+                <input id="cpf" class="form-control mb-2" placeholder="CPF">
+
+                <input id="assento" class="form-control mb-2" placeholder="Assento">
+
+                <select id="pagamento" class="form-control mb-2">
+                    <option value="">Pagamento</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão">Cartão</option>
+                </select>
+
+                <button onclick="salvarIngresso()" class="btn btn-primary">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <body class="venda-ingressos">
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

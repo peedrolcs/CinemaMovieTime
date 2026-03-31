@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand">
+                <img src="" alt="">
+                MovieTime
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-filme.html" class="nav-link">Cadastro de Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-salas.html" class="nav-link">Cadastro das Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cadastro-sessoes.html" class="nav-link">Cadastro das Sessões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./sessoes-disponiveis.html" class="nav-link">Sessões Disponíveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./venda-ingressos.html" class="nav-link">Vendas dos Ingressos</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <div class="container mt-4">
+        <h2>Cadastro de Sessões</h2>
+        <hr>
+
+        <div class="row justify-content-center">
+            <div class="col">
+
+                <select id="filme" class="form-control"></select><br>
+
+                <select id="sala" class="form-control"></select><br>
+
+                <input id="data" type="datetime-local" class="form-control"><br>
+
+                <input id="preco" type="number" class="form-control" placeholder="Preço"><br>
+
+                <select id="idioma" class="form-control">
+                    <option value="">Selecione o idioma</option>
+                    <option value="Dublado">Dublado</option>
+                    <option value="Legendado">Legendado</option>
+                </select><br>
+
+                <select id="formato" class="form-control">
+                    <option value="">Selecione o formato</option>
+                    <option value="2D">2D</option>
+                    <option value="3D">3D</option>
+                </select><br>
+
+                <button type="button" onclick="salvarSessao()" class="btn btn-primary">
+                    Salvar Sessão
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <body class="cadastro-sessoes">
+
+    <!-- SCRIPTS -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
